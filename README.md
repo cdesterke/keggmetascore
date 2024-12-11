@@ -32,6 +32,6 @@ res<-metagenescore(gene_data,symbol,method="ssgsea")
 library(keggmetascore)
 data(ensembl_data)
 data(ensembl)
-res<-metaensemblscore(gene_data,symbol,method="zscore")
+res<-metaensemblscore(ensembl_data,ensembl,method="zscore")
 ```
 ![res](https://github.com/cdesterke/keggmetascore/blob/main/ensemblscore.png)
