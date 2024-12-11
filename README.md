@@ -21,5 +21,17 @@ R-package to perform single-sample scores of metabolism based on 41 genesets fro
 library(keggmetascore)
 data(gene_data)
 data(symbol)
+res<-metagenescore(gene_data,symbol,method="ssgsea")
 ```
 ![res](https://github.com/cdesterke/keggmetascore/blob/main/metagenescore.png)
+
+
+
+### kegg-metabolism scoring of a human transcriptome matrix annotated with Ensembl IDENTIFIERS and based on GSVA algorithm: function "metaensemblscore"
+```r
+library(keggmetascore)
+data(ensembl_data)
+data(ensembl)
+res<-metaensemblscore(gene_data,symbol,method="zscore")
+```
+![res](https://github.com/cdesterke/keggmetascore/blob/main/ensemblscore.png)
