@@ -1,10 +1,6 @@
 # keggmetascore
 
 
-
-
-
-
 ### package installation
 ```r
 library(devtools)
@@ -35,3 +31,15 @@ data(ensembl)
 res<-metaensemblscore(ensembl_data,ensembl,method="zscore")
 ```
 ![res](https://github.com/cdesterke/keggmetascore/blob/main/ensemblscore.png)
+
+### heatmap of metabolism score results
+```r
+library(keggmetascore)
+data(gene_data)
+data(symbol)
+data(pheno)
+res<-metagenescore(gene_data,symbol,method="ssgsea")
+metaheat(res,pheno,scale="none",fontsize=10)
+```
+![res](https://github.com/cdesterke/keggmetascore/blob/main/metaheat.png)
+
