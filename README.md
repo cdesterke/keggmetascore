@@ -54,5 +54,5 @@ res<-metagenescore(gene_data,symbol,method="ssgsea")
 metades_results<-metades(res,pheno$group,control="Non_Tumor")
 metades_results
 ```
-![res](https://github.com/cdesterke/keggmetascore/blob/main/metaheat.png)
+![res](https://github.com/cdesterke/keggmetascore/blob/main/metades.png)
 
