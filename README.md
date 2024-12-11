@@ -8,7 +8,7 @@ install_github("cdesterke/keggmetascore")
 ```
 ### description
 keggmetascore is a R-package performing single-sample scores of metabolism based on 41 genesets extracted from KEGG database. With python fonction 
-metabolism geneset were extracted from human MSigDB database version.1.2024. From this metabolism extraction all gene symbol were converted in human Ensembl identifiers with the annotation: Ensembl_biomart122 on HG38. Based on GSVA R application the package allow single sample score computing on the 41 metabolism genesets starting from a transcriptome matrix annotated with gene symbols or ensembl identifiers. score could be visualized as heatmap. Differential genesets analysis between two sample groups could be perform and results could be visualized as volcanoplot.
+metabolism geneset were extracted from human MSigDB database version.1.2024. From this metabolism extraction all gene symbol were converted in human Ensembl identifiers with the annotation: Ensembl_biomart122 on HG38. Based on GSVA R application, the package allows single sample score computing on the 41 metabolism genesets starting from a transcriptome matrix annotated with gene symbols or ensembl identifiers. Scores could be visualized as heatmap. Differential genesets analysis between two groups of samples could be perform and results could be visualized as volcanoplot.
 
 
 ### kegg-metabolism scoring of a human transcriptome matrix annotated with gene symbols and based on GSVA algorithm: function "metagenescore"
