@@ -1,0 +1,15 @@
+Package: keggmetascore
+Type: Package
+Title: keggmetascore computes and visualizes KEGG metabolism scores
+Version: 1.0.1
+Author: Christophe Desterke
+Maintainer: The package maintainer <christophe.desterke@gmail.com>
+Description: starting from a matrix of transcriptome/proteome annotated by
+    gene symbols or ensembl or protein identifiers, it computes metabolism scores
+    in 41 genesets extracts from KEGG database. It is possible to 
+    identify differential geneset between two groups of samples. Scores 
+    could be visualized as heatmap and DEG as volcanoplot. 
+License: GNU
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
