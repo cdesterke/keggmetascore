@@ -30,6 +30,19 @@ res<-metaensemblscore(ensembl_data,ensembl,method="zscore")
 ```
 ![res](https://github.com/cdesterke/keggmetascore/blob/main/ensemblscore.png)
 
+
+### kegg-metabolism scoring of a human proteome matrix annotated with Swissprot IDENTIFIERS and based on GSVA algorithm: function "metaensemblscore"
+```r
+library(keggmetascore)
+data(swissprot_data)
+data(swissprot)
+res<-metaensemblscore(swissprot_data,swissprot,method="ssgsea")
+```
+![res](https://github.com/cdesterke/keggmetascore/blob/main/metaprotscore.png)
+
+
+
+
 ### heatmap of metabolism score results: function "metaheat"
 ```r
 library(keggmetascore)
