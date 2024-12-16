@@ -36,7 +36,7 @@ res<-metaensemblscore(ensembl_data,ensembl,method="zscore")
 library(keggmetascore)
 data(swissprot_data)
 data(swissprot)
-res<-metaensemblscore(swissprot_data,swissprot,method="ssgsea")
+res<-metaprotscore(swissprot_data,swissprot,method="ssgsea")
 ```
 ![res](https://github.com/cdesterke/keggmetascore/blob/main/metaprotscore.png)
 
